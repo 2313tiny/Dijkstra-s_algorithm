@@ -132,7 +132,6 @@ void Dijkstra_algorithm(Graph & g,
 	std::multimap<bool, Vertex> checked;
 	std::multimap<bool, Vertex>::iterator checkedIt;
 	std::multimap<bool, Vertex>::iterator finishIt;
-	std::multimap<bool, Vertex>::iterator finishIt;
 	Vertex min_potential;	
 	
 	//if value is false, node not checked  
@@ -167,10 +166,6 @@ void Dijkstra_algorithm(Graph & g,
 	//for checking all node 
 	for (checkedIt = checked.begin(); checkedIt != checked.end(); ++checkedIt){
 		while( false == finishIt->first){
-
-	//for checking all node 
-	for (checkedIt = checked.begin(); checkedIt != checked.end(); ++checkedIt){
-		while( false == checkedIt->first){
 			//find node with min potention
 			//also this point need for check node 
 			find_min_potential(path, min_potential, checked);
