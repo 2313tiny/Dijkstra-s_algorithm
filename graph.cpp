@@ -131,14 +131,8 @@ void Dijkstra_algorithm(Graph & g,
 	std::multimap<int, Vertex>::iterator pathIt = path.begin();
 	std::multimap<bool, Vertex> checked;
 	std::multimap<bool, Vertex>::iterator checkedIt;
-<<<<<<< HEAD
 	std::multimap<bool, Vertex>::iterator finishIt;
-=======
-<<<<<<< HEAD
 	std::multimap<bool, Vertex>::iterator finishIt;
-=======
->>>>>>> c5c0ab156dcc88306895e6930767e7688271f370
->>>>>>> c51e404e10eee6750d8b869dee9dc226a1f0b4c3
 	Vertex min_potential;	
 	
 	//if value is false, node not checked  
@@ -162,10 +156,6 @@ void Dijkstra_algorithm(Graph & g,
 	set_path(path, start, pathIt, 10000, checked); 
 	show_path(path);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> c51e404e10eee6750d8b869dee9dc226a1f0b4c3
 	//find finish node is ckecked or not
 	for (checkedIt = checked.begin(); checkedIt != checked.end(); ++checkedIt){
 		if(checkedIt->second.m_node == finish.m_node){
@@ -177,15 +167,10 @@ void Dijkstra_algorithm(Graph & g,
 	//for checking all node 
 	for (checkedIt = checked.begin(); checkedIt != checked.end(); ++checkedIt){
 		while( false == finishIt->first){
-<<<<<<< HEAD
-=======
-=======
 
 	//for checking all node 
 	for (checkedIt = checked.begin(); checkedIt != checked.end(); ++checkedIt){
 		while( false == checkedIt->first){
->>>>>>> c5c0ab156dcc88306895e6930767e7688271f370
->>>>>>> c51e404e10eee6750d8b869dee9dc226a1f0b4c3
 			//find node with min potention
 			//also this point need for check node 
 			find_min_potential(path, min_potential, checked);
