@@ -15,7 +15,7 @@
 void test_v1()
 {
 	Vertex point1(1, "Moscow");
-	Vertex point2(2, "St.Petzburg");
+	Vertex point2(2, "St.Petersburg");
 	Vertex point3(3, "Kazan");
 	Vertex point4(4, "Rostov");
 	Vertex point5(5, "Magadan");
